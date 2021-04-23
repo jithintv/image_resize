@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Upload Images</title>
+</head>
+<body>
+
+<form method="post" action="" enctype="multipart/form-data">
+{% csrf_token %}
+<h1>Image Uploader</h1>
+<label>Name:</label>
+<input type="text" name="name" maxlength="50" required="">
+<input type="file" name="photo"><br><br>
+<p>
+<label>Height:</label>
+<input type="text" name="Height" maxlength="25" required="">
+<label>width:</label>
+<input type="text" name="width" maxlength="25" required="">
+</p>
+    <input type="submit" value="submit" >  <a href="index.html"> <h3>Go Back</h3></a>
+
+
+</form>
+
+
+
+
+</body>
+</html>
